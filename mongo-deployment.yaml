@@ -30,3 +30,15 @@ spec:
             secretKeyRef:
               key: mongo-root-password
               name: mongo-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+spec:
+  selector:
+    app: mongodb
+  ports:
+    - port: 27017
+      protocol: TCP
+      targetPort: 27017
