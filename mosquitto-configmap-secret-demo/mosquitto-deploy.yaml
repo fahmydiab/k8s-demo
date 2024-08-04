@@ -20,7 +20,7 @@ spec:
             - containerPort: 1883
           volumeMounts:
             - mountPath: /mosquitto/config
-              name: mosquitto.config
+              name: mosquitto-config
             - name: mosquitto-secret
               mountPath: /mosquitto/secret
               readOnly: true
