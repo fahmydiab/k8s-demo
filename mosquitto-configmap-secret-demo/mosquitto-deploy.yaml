@@ -25,7 +25,7 @@ spec:
               mountPath: /mosquitto/secret
               readOnly: true
       volumes:
-        - name: mosquitto.config
+        - name: mosquitto-config
           configMap:
             name: mosquitto-config-file
         - name: mosquitto-secret
